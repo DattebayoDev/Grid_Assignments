@@ -1,0 +1,70 @@
+* {
+    border: 2px solid red
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin-top: 20px;
+}
+
+h1 {
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+td, th {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
+}
+
+.label {
+    background-color: #e6f7ff;
+    font-weight: bold;
+}
+
+.day, .date {
+    height: 50px;
+    font-weight: bold;
+}
+
+.date {
+    color: #888;
+    font-size: 14px;
+}
+button {
+    display: flex;
+    margin-top: 10px;
+    padding: 10px
+}
+
+td:hover{
+    background-color: red;
+}
+
+#options-menu {
+  position: absolute; /* Position it relative to the whole page */
+  display: none;     /* Hide by default */
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 5px;
+}
+
+#options-menu.show {
+  display: block;    /* Show when the 'show' class is added */
+}
