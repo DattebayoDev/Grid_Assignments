@@ -8,44 +8,56 @@
           margin: 0;
           padding: 0;
           border-box: box-sizing; 
-          border: 1px solid black;
         }
       .container {
         display: grid;
         grid-template-columns: 1fr 4fr;
         gap: 4px;
-        background: lightblue;
+        background: lightseagreen;
       }
       .header {
-        grid-column: span 3;
+        display: grid;
+        grid-template-columns: 1fr 4fr;
+        grid-column: 1 / 3;
+        background-color: antiquewhite;
+        
       }
       
       .menu ul {
         background: blue;
         display: grid;
+        grid-template-columns: repeat(4, 1fr);
       }
 
       .nav ul {
         display: grid;
-        background:blue;
+        grid-template-columns: 1fr 1fr 1fr;
       }
 
       .sidebar {
         display: grid;
+        grid-row: 2 / 4;
         gap: 50px;
         text-align: center;
       }
 
+      .side-content, .photo {
+        display: grid;
+        align-items: center;
+      }
       .article {
         display: grid;
-        grid-column: repeat(auto-fit, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
         gap: 15px;
       }
 
-      .card {
+      .card .article{
         height: 200px;
+      } 
+      
+      .footer {
+        grid-column: 1 / 3;
       }
-        
         
     </style>
 </head>
@@ -68,13 +80,13 @@
         <div class="photo">
           <p>placeholder for image</p>    
         </div>
-        <div class="side-content">Box 1
+         <div class="side-content">Box 1
         </div>
         <div class="side-content">Box 2
         </div>
         <div class="side-content">Box 3
         </div>
-      </div>
+      </div> 
     
       <div class="nav">
         <ul>
@@ -121,10 +133,17 @@
         <div class="card">
           <p class="title">Article Title</p>
         </div> 
-
+      
+    
+      </div> 
+      
+      <div class="footer"> 
+        <div> Footer </div>
+      </div>
+    
     </div>
-          
-  
+
+
       
   
     
